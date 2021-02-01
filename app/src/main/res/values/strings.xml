@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MviPokedex</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_mvipokedex">MviPokedex</string>
+    <string name="txt_type">Types</string>
+    <string name="txt_forms">Forms</string>
+    <string name="txt_abilities">Abilities</string>
+    <string name="txt_moves">Moves</string>
+</resources>

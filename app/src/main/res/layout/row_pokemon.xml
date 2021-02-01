@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="pokemon"
+            type="com.gowtham.mvipokedex.models.Pokemon" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        tools:ignore="UseCompoundDrawables,ContentDescription">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                paletteImage="@{pokemon.imageUrl}"
+                paletteCard="@{cardView}"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/txt_pokemon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{pokemon.name}"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
